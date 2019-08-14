@@ -33,7 +33,8 @@ public:
 			milliSeconds = 3000;
 		}
 
-		return motorUnit.moveForwards(milliSeconds).stopMoving().statusOK();
+		// return motorUnit.moveForwards(milliSeconds).stopMoving().statusOK();
+   return motorUnit.moveBackwards(milliSeconds).stopMoving().statusOK();
 	}
 
 private:
